@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="#onButtonClick">
+   <left>
+
+   </left>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="TOP" layoutX="25.0" layoutY="68.0" prefHeight="45.0" prefWidth="98.0" text="出力">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="25.0" layoutY="200.0" prefHeight="45.0" prefWidth="98.0" text="入力">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="inputText" layoutX="-71.0" layoutY="180.0" prefHeight="79.0" prefWidth="385.0" />
+            <Label fx:id="outputLabel" layoutX="-70.0" layoutY="37.0" prefHeight="103.0" prefWidth="384.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="78.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="outputButton" layoutX="271.0" layoutY="14.0" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="53.0" prefWidth="224.0" text="表示する">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
